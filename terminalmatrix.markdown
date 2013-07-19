@@ -17,7 +17,7 @@ if the_world_is_flat:
     print("Be careful not to fall off!") # don't forget to indent this sentence with 4 spaces, it's a python thing...  
 ```
 
-See that #-thing? That means that whatever follows in a comment. You should not copy these and paste them in your terminal. Not that something bad will happen, but nothing much will happen! 
+See that #-thing? That means that whatever follows is a comment. You should not copy these and paste them in your terminal. Not that something bad will happen, but nothing much will happen! 
 Use ```Ctrl-D``` to exit the interactive python 'shell'.
 
 #####Hello, PyLadies! 
@@ -35,7 +35,7 @@ cd PyLadies # change the directory to the PyLadies one, so I can work from there
 mkdir Images
 mkdir Files
 ```
-Typing in ```open .``` () will open the whole directory for you, where you'll find your Images folder and you Files folder. 
+Typing in ```open .``` will open the whole directory for you, where you'll find your Images folder and you Files folder. 
 
 Moving back to your ```hello.py``` file, make sure it's saved in your Files folder and switch to your Files folder using the terminal:  
 
