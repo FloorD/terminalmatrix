@@ -18,6 +18,7 @@ if the_world_is_flat:
 ```
 
 See that #-thing? That means that whatever follows in a comment. You should not copy these and paste them in your terminal. Not that something bad will happen, but nothing much will happen! 
+Use ```Ctrl-D``` to exit the interactive python 'shell'.
 
 #####Hello, PyLadies! 
 
@@ -46,15 +47,37 @@ Now, type ```python hello.py```. Your terminal will (if all went well) return th
 
 ... and you're ready for the cool stuff! 
 
+#####Some weird-arsed shit
+Python lets you use single quotes AND double quotes, although not interchangeably (if you start with one, you have to end with the same one). Python also has a two more types of quotes. A triple quote, ''', is created by typing three single quotes. A triple-double quote, """, is created by typing three double quotes. So, you can have several layers of quoting before you need to worry about escaping your quotes. For example, this is valid Python:
 
+```print """I wish that I'd never heard him say, '''She said, "He said, 'Give me five dollars'"'''"""```
 
+#####Turtle shell
 
-Posting a tweet from the terminal
-Number guessing game
-Converting pictures to thumbnails
+Another funny thing of the Python interactive shell is [Turtle Shell][3]. We'll be moving a (imaginary) turtle on a screen. To start type:  
 
+```
+python
+import turtle
+turtle.forward(15)
+```
 
-```command```
+Repeat that last command (```turtle.forward(15)```) a few times an you'll see our turtle moving 15 pixels in the direction it is facing, drawing a line as it moves.  Up for a roadtrip?  
+
+```
+turtle.right(25) # rotates in-place 25 degrees clockwise
+turtle.backward(10)
+turtle.color("green") # makes the arrow green  
+turtle.pencolor("green") # makes the line green
+turtle.showturtle() # or: turtle.st(), to make sure the turtle is visible
+turtle.shape("turtle") # to give the turtle it's turtle-shape (alternatively: turtle.shape("circle"))
+turtle.shapesize(5, 5, 12) # makes it a rather big turtle
+turtle.reset() # to go back to the middle of the document and erase all lines
+```
+
+Try and draw the first letter of you name (find more hints [here][4]). Enjoy! 
 
 [1]: http://www.icndb.com/api/
 [2]: http://www.sublimetext.com/2
+[3]: http://pythonturtle.org/
+[4]: http://docs.python.org/2/library/turtle.html
