@@ -58,7 +58,36 @@ Conditional Assignment
 
 x = 3 if (y == 1) else 2
 
+Wrapping Functions
 
+<pre>
+def my_decorator(func):
+    def decorated():
+        print("before hallo")
+        func()
+        print("after hallo")
+    return decorated
+
+@my_decorator
+def hallo():
+    print("hallo")
+
+hallo()
+</pre>
+
+Generating Lists from other Lists
+
+<pre>
+a = [1,2,3,4,5,6]
+b = [i for i in a if i % 2 == 0] # [2, 4, 6]
+</pre>
+
+Opening Files without handling closing and such
+
+<pre>
+with open("some_file.txt", "r") as f:
+   print f.read()
+</pre>
 
 Easter Eggs:
 >>>import __hello__
