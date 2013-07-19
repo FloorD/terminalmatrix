@@ -60,6 +60,12 @@ x = 3 if (y == 1) else 2
 
 
 
+Easter Eggs:
+>>>import __hello__
+
+>>> from __future__ import braces
+  File "<stdin>", line 1
+SyntaxError: not a chance
 
 >>> import this
 The Zen of Python, by Tim Peters
@@ -86,3 +92,23 @@ Namespaces are one honking great idea -- let's do more of those!
 
 
 http://www.wefearchange.org/2010/06/import-this-and-zen-of-python.html
+
+
+ >>> import this
+
+>>> love = this
+>>> this is love
+True
+>>> love is True
+False
+>>> love is False
+False
+>>> love is not True or False
+True
+>>> love is not True or False; love is love
+True
+True
+
+
+
+import antigravity
